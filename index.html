@@ -87,7 +87,7 @@ footer{padding:25px 7%;text-align:center;color:#777;background:#fff}
 function sendWhatsApp(e){
   e.preventDefault();
   // IMPORTANT: Replace 91XXXXXXXXXX with your own WhatsApp number.
-  const number="91XXXXXXXXXX";
+  const number="916000471367";
   const text=`Hi! I'm ${document.getElementById('name').value}. I'd like the ${document.getElementById('service').value}. My WhatsApp/phone: ${document.getElementById('phone').value}. Target role/details: ${document.getElementById('message').value}`;
   if(number.includes("X")) alert("First replace 91XXXXXXXXXX in the code with your WhatsApp number.");
   else window.open("https://wa.me/"+number+"?text="+encodeURIComponent(text),"_blank");
