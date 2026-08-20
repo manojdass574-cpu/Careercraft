@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareerCraft — Resumes That Get Noticed</title>
+<meta name="description" content="Professional ATS-friendly resumes, cover letters and LinkedIn profile makeovers.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f8fc;color:#151827;line-height:1.6}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #eee}
+.logo{font-size:24px;font-weight:800}.logo span{color:#635bff}
+nav a{margin-left:24px;text-decoration:none;color:#333;font-weight:600}
+.btn{display:inline-block;background:#635bff;color:#fff;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
+.hero{padding:90px 7%;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;background:linear-gradient(135deg,#eef0ff,#fff)}
+.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.05;margin-bottom:20px}
+.hero h1 span{color:#635bff}.hero p{font-size:19px;color:#5e6372;max-width:600px;margin-bottom:30px}
+.card{background:#fff;border-radius:22px;padding:30px;box-shadow:0 15px 45px #1d235012}
+.mock{border-left:7px solid #635bff}.mock h3{font-size:24px;margin-bottom:8px}.mock hr{margin:18px 0;border:0;border-top:1px solid #ddd}
+section{padding:75px 7%}.title{text-align:center;margin-bottom:45px}.title h2{font-size:38px}.title p{color:#6b7080}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.service h3{margin:15px 0 8px}.service p{color:#666}.icon{font-size:34px}
+.price{font-size:35px;font-weight:800;margin:15px 0}.price small{font-size:14px;color:#777}
+.price-card{display:flex;flex-direction:column}.price-card .btn{margin-top:auto;text-align:center}
+.featured{border:2px solid #635bff;transform:translateY(-8px)}
+ul{list-style:none;margin:20px 0}.price-card li{margin:10px 0}.price-card li:before{content:"✓";color:#635bff;font-weight:bold;margin-right:9px}
+.cta{text-align:center;background:#151827;color:#fff}.cta p{color:#c7c9d3;margin:10px auto 25px}
+form{max-width:650px;margin:auto}.row{display:grid;grid-template-columns:1fr 1fr;gap:15px}input,textarea,select{width:100%;padding:14px;margin-bottom:15px;border:1px solid #ddd;border-radius:10px;font:inherit}textarea{min-height:120px}
+footer{padding:25px 7%;text-align:center;color:#777;background:#fff}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:60px}.grid{grid-template-columns:1fr}.featured{transform:none}.row{grid-template-columns:1fr}nav div:last-child{display:none}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">Career<span>Craft</span></div>
+  <div>
+    <a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <p style="color:#635bff;font-weight:800">CAREER DOCUMENTS THAT WORK</p>
+    <h1>Build a resume that <span>gets noticed.</span></h1>
+    <p>Professional, ATS-friendly resumes and LinkedIn profiles designed to help students and job seekers stand out.</p>
+    <a class="btn" href="#contact">Get My Resume →</a>
+  </div>
+  <div class="card mock">
+    <h3>YOUR NAME</h3><p>Marketing Specialist</p><hr>
+    <b>PROFILE</b><p>Results-driven professional with strong communication and problem-solving skills.</p>
+    <br><b>EXPERIENCE</b><p>Achievement-focused experience written with clear, measurable results.</p>
+    <br><b>SKILLS</b><p>Communication · Leadership · MS Office · Problem Solving</p>
+  </div>
+</header>
+
+<section id="services">
+  <div class="title"><h2>What I can do for you</h2><p>Simple, professional career documents without the headache.</p></div>
+  <div class="grid">
+    <div class="card service"><div class="icon">📄</div><h3>ATS Resume</h3><p>Clean, keyword-focused resumes built to work with applicant tracking systems.</p></div>
+    <div class="card service"><div class="icon">✉️</div><h3>Cover Letter</h3><p>A tailored cover letter that connects your skills to the job you're applying for.</p></div>
+    <div class="card service"><div class="icon">💼</div><h3>LinkedIn Makeover</h3><p>Stronger headline, About section and experience descriptions for your profile.</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="title"><h2>Simple pricing</h2><p>Affordable packages for students and job seekers.</p></div>
+  <div class="grid">
+    <div class="card price-card"><h3>Basic Resume</h3><div class="price">₹299 <small>/ one-time</small></div><ul><li>1 professional resume</li><li>Clean modern design</li><li>PDF delivery</li></ul><a class="btn" href="#contact">Choose Plan</a></div>
+    <div class="card price-card featured"><h3>ATS Resume</h3><div class="price">₹499 <small>/ one-time</small></div><ul><li>ATS-friendly format</li><li>Keyword optimization</li><li>PDF + editable file</li></ul><a class="btn" href="#contact">Choose Plan</a></div>
+    <div class="card price-card"><h3>Career Package</h3><div class="price">₹999 <small>/ one-time</small></div><ul><li>ATS resume</li><li>Cover letter</li><li>LinkedIn makeover</li></ul><a class="btn" href="#contact">Choose Plan</a></div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="title"><h2>Ready to upgrade your career?</h2><p>Send your details and I'll get back to you.</p></div>
+  <form onsubmit="sendWhatsApp(event)">
+    <div class="row"><input id="name" placeholder="Your name" required><input id="phone" placeholder="Phone / WhatsApp" required></div>
+    <select id="service"><option>ATS Resume — ₹499</option><option>Basic Resume — ₹299</option><option>Career Package — ₹999</option></select>
+    <textarea id="message" placeholder="Tell me about your current job/target role"></textarea>
+    <button class="btn" type="submit">Send Request on WhatsApp</button>
+  </form>
+</section>
+
+<footer>© 2026 CareerCraft · Professional Resume & Career Services</footer>
+
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  // IMPORTANT: Replace 91XXXXXXXXXX with your own WhatsApp number.
+  const number="91XXXXXXXXXX";
+  const text=`Hi! I'm ${document.getElementById('name').value}. I'd like the ${document.getElementById('service').value}. My WhatsApp/phone: ${document.getElementById('phone').value}. Target role/details: ${document.getElementById('message').value}`;
+  if(number.includes("X")) alert("First replace 91XXXXXXXXXX in the code with your WhatsApp number.");
+  else window.open("https://wa.me/"+number+"?text="+encodeURIComponent(text),"_blank");
+}
+</script>
+</body>
+</html>
